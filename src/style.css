@@ -3,8 +3,235 @@
     src: url(fonts/Roboto/Roboto-Regular.ttf) format('truetype');
     font-weight: normal;
 }
+
 @font-face {
     font-family:'Roboto';
     src: url(fonts/Roboto/Roboto-Bold.ttf) format('truetype');
     font-weight: bold;
+}
+
+@font-face {
+    font-family:'Roboto';
+    src: url(fonts/Roboto/Roboto-Light.ttf) format('truetype');
+    font-weight: light;
+}
+
+@font-face {
+    font-family:'Roboto';
+    src: url(fonts/Roboto/Roboto-Italic.ttf) format('truetype');
+    font-weight: italic;
+}
+
+/*________________________________________________________________________________________________________*/
+
+body {
+    font-family: 'Roboto';
+    height: 100%;
+    margin-top: 5%;
+    margin-left: 9%;
+    margin-bottom: 6%;
+    margin-right: 9%;
+}
+
+header {
+    background-color: #1F2936;
+    color: white;
+    font-size: 90%;
+    text-align: center;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.navbar {
+    padding-bottom: 20px;
+    background-color: #1F2936;
+    height: 10px;
+    margin-bottom: 0px;
+}
+
+.nav-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+}
+
+#header-divider {
+    border-top: 1px #001e4a2b;
+    margin: 20px 0px 20px;
+}
+
+#header-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:90%;
+    margin: 0 auto;
+}
+
+.header-content {
+    margin: 0;
+    padding: 1px;
+    width: 25%;
+    text-align: left;
+}
+
+.header-content h1 {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 200%;
+}
+
+.header-content p {
+    margin: 0;
+    margin-top: 0;
+    font-weight: light;
+    line-height: 100%;
+}
+
+.header-content button {
+    margin-top: 10px;
+    padding: 5px 19px;
+    font-weight: bold;
+    font-size: x-small;
+    color: white;
+    background-color: #3782F5;
+    border-radius: 10px;
+    border: none;
+}
+
+img {
+    border: 0;
+    margin-left: 50px;
+    max-width: 452px;
+    max-height: 218px;
+    
+}
+
+/*________________________________________________________________________________________________________*/
+
+main {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+#h1-topsection {
+    color: #1F2934;
+    font-size: 170%;
+    text-align: center;
+    padding: 2%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 4%;
+    grid-row-gap: 30px;
+    justify-items: start;
+    align-items: start;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #3681F5;
+    border-radius: 10px;
+    height: 120px;
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.text-block {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.text-block p {
+    font-size: 85%;
+    color: #1F2934;
+    text-align: justify;
+    margin: 0;
+}
+
+
+.quote-box {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+.quote-box p {
+    font-style: italic;
+    color: #333;
+}
+
+.pop-box {
+    background-color: #3681F5;
+    max-width: 60%;
+    height: 10%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#credit {
+    text-align: right;
+    font-size: 0.9em;
+}
+
+.pop-box #calltoaction {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.pop-box button {
+    padding: 10px 20px;
+    background-color: #3681F5;
+    color: white;
+    border: 2px;
+    border-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+
+
+/*________________________________________________________________________________________________________*/
+
+footer {
+    background-color: #1F2936;
+    padding: 25px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+footer small {
+    font-size: 15px;
 }
