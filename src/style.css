@@ -22,6 +22,7 @@
     font-weight: italic;
 }
 
+
 /*________________________________________________________________________________________________________*/
 
 body {
@@ -40,7 +41,7 @@ header {
     text-align: center;
     padding: 15px;
     padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .navbar {
@@ -109,6 +110,7 @@ img {
     
 }
 
+
 /*________________________________________________________________________________________________________*/
 
 main {
@@ -138,11 +140,10 @@ section {
     grid-row-gap: 30px;
     justify-items: start;
     align-items: start;
-    max-width: 700px;
+    max-width: 600px;
     width: 100%;
     margin: 0 auto;
 }
-
 .box {
     display: flex;
     justify-content: center;
@@ -154,7 +155,6 @@ section {
     margin: 0 auto;
     box-sizing: border-box;
 }
-
 .text-block {
     padding: 10px;
     width: 100%;
@@ -163,7 +163,6 @@ section {
     flex-direction: column;
     justify-content: flex-start;
 }
-
 .text-block p {
     font-size: 85%;
     color: #1F2934;
@@ -172,52 +171,127 @@ section {
 }
 
 
+
 .quote-box {
-    max-width: 80%;
+    max-width: 100%;
+    height: 200px;
     margin: 0 auto;
     text-align: center;
     padding: 20px;
-    background-color: #f7f7f7;
+    background-color: #E4E5EB;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
 .quote-box p {
+    max-width: 400px;
     font-style: italic;
+    font-size: 120%;
+    text-align: left;
     color: #333;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.434);
 }
-
-.pop-box {
-    background-color: #3681F5;
-    max-width: 60%;
-    height: 10%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-}
-
 #credit {
+    font-weight: bold;
     text-align: right;
     font-size: 0.9em;
 }
 
+
+
+.pop-box {
+    background-color: #3681F5;
+    max-width: 70%;
+    height: 90px;
+    margin: 50px auto;
+    text-align: left;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pop-box .text-content {
+    color: white;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+}
+.pop-box p {
+    margin: 0;
+    padding: 2px 0;
+}
 .pop-box #calltoaction {
     font-weight: bold;
+    margin-bottom: 2px;
+}
+.pop-box button {
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: #3681F5;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+
+
+.weather-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    justify-items: center;
+    align-items: center;
+}
+.weather-box {
+    border: 5px solid #3681F5;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.weather-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.weather-box p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.post-box {
+    border: 5px solid #3782F5;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+.post-box h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
 }
-
-.pop-box button {
-    padding: 10px 20px;
-    background-color: #3681F5;
-    color: white;
-    border: 2px;
-    border-color: white;
-    border-radius: 5px;
-    font-weight: bold;
+.post-box p {
+    font-size: 1em;
+    color: #333;
 }
-
-
 
 
 /*________________________________________________________________________________________________________*/
@@ -225,6 +299,7 @@ section {
 footer {
     background-color: #1F2936;
     padding: 25px;
+    margin-top: 60px;
 }
 
 footer p {
